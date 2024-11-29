@@ -1,0 +1,47 @@
+# Compiled class file
+*.class
+
+# Maven
+target/
+!.mvn/timer/*.log
+
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+*.nb-gradle/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+*.jar
+*.war
+*.ear
+*.db
+*.hprof
+*.log
+*.pyc
+*.pyo
+*.pyd
