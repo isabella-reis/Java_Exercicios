@@ -19,9 +19,4 @@ public class Atendente {
     }
 
 
-
-    public static void main(String[] args) {
-
-    }
-
 }

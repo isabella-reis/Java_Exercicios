@@ -43,8 +43,4 @@ public class Cliente {
 
         return matricula.toString();
     }
-
-    public static void main(String[] args) {
-
-    }
 }

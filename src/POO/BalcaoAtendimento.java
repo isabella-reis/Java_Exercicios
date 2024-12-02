@@ -51,7 +51,4 @@ public class BalcaoAtendimento {
         return dataEHoraFormatada;
     }
 
-    public static void main(String[] args) {
-
-    }
 }
