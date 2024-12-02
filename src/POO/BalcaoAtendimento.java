@@ -1,5 +1,7 @@
 package POO;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class BalcaoAtendimento {
@@ -9,14 +11,14 @@ public class BalcaoAtendimento {
     private int numBalcao;
     private String nomeLoja;
     private int qtdDeAtendimentos;
-    private Date dataEHoraAtendimento; // LocalDateTime e LocalDateTime.now()
+    private String dataEHoraAtendimento;
 
-    public BalcaoAtendimento (Atendente atendente, int numBalcao, String nomeLoja, int qtdDeAtendimentos, Date dataEHoraAtendimento) {
+    public BalcaoAtendimento (Atendente atendente, int numBalcao, String nomeLoja, int qtdDeAtendimentos, String dataEHoraAtendimento) {
         this.atendente = atendente;
         this.numBalcao = numBalcao;
         this.nomeLoja = nomeLoja;
         this.qtdDeAtendimentos = qtdDeAtendimentos;
-        this.dataEHoraAtendimento = dataEHoraAtendimento;
+        this.dataEHoraAtendimento = dataEHora();
     }
 
     public Atendente getAtendente() {
@@ -35,13 +37,18 @@ public class BalcaoAtendimento {
         return qtdDeAtendimentos;
     }
 
-    public Date getDataEHoraAtendimento() {
+    public String getDataEHoraAtendimento() {
         return dataEHoraAtendimento;
     }
 
 
-    public void inserirDataEHora () {
+    public String dataEHora () {
+        LocalDateTime dataEHora = LocalDateTime.now();
+        DateTimeFormatter formatarDtEHr = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
+        String dataEHoraFormatada = dataEHora.format(formatarDtEHr);
+
+        return dataEHoraFormatada;
     }
 
     public static void main(String[] args) {

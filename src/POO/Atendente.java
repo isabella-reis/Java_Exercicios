@@ -2,18 +2,12 @@ package POO;
 
 public class Atendente {
 
-    private int id;
     private String nome;
-    private String numMatricula;
+    private String numMatricula; // chave
 
-    public Atendente(int id, String nome, String numMatricula) {
-        this.id = id;
+    public Atendente(String nome, String numMatricula) {
         this.nome = nome;
         this.numMatricula = numMatricula;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getNome() {

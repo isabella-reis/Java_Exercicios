@@ -7,16 +7,22 @@ public class Cliente {
     private String matricula;
     private String nome;
     private String email;
+    private String cpf; // chave
 
 
-    public Cliente(String nome, String email) {
+    public Cliente(String nome, String email, String cpf) {
         this.nome = nome;
         this.email = email;
+        this.cpf = cpf;
         this.matricula = gerarMatricula();
     }
 
     public String getMatricula() {
         return matricula;
+    }
+
+    public String getCpf() {
+        return cpf;
     }
 
     public String getNome() {
@@ -39,9 +45,6 @@ public class Cliente {
     }
 
     public static void main(String[] args) {
-        Cliente cliente1 = new Cliente("Isabella", "123@gmail.com");
-        Cliente cliente2 = new Cliente("Leonardo", "456@hotmail.com");
-        Cliente cliente3 = new Cliente("Francisco", "789@outlook.com");
 
     }
 }
