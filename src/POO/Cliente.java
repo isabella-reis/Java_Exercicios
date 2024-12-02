@@ -20,15 +20,12 @@ public class Cliente {
     public String getMatricula() {
         return matricula;
     }
-
     public String getCpf() {
         return cpf;
     }
-
     public String getNome() {
         return nome;
     }
-
     public String getEmail() {
         return email;
     }

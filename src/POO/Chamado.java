@@ -25,11 +25,9 @@ public class Chamado implements Relatorio {
     public Atendente getAtendente() {
         return atendente;
     }
-
     public Cliente getCliente() {
         return cliente;
     }
-
     public String getNomeProduto() {
         return nomeProduto;
     }

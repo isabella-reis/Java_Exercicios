@@ -13,7 +13,6 @@ public class Atendente {
     public String getNome() {
         return nome;
     }
-
     public String getNumMatricula() {
         return numMatricula;
     }
